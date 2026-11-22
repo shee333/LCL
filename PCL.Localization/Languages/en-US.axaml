@@ -3272,6 +3272,7 @@
     <sys:String x:Key="Setup.Update.CheckAgain">Check again</sys:String>
     <sys:String x:Key="Setup.Update.CheckFailed">Failed to check for updates</sys:String>
     <sys:String x:Key="Setup.Update.Checking">Checking for updates...</sys:String>
+    <sys:String x:Key="Setup.Update.Disabled">Online updates are not available for this build. Please get the latest version from the release page.</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.DownloadRuntime">Download .NET {0} Runtime</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Message">A launcher update (version {1}) was found, but the new version requires .NET {0} to be installed on your computer.&#xA;You need to install .NET {0} before continuing the update.&#xA;&#xA;Click the button below to open the webpage, then select {2} under ".NET Desktop Runtime" to download.</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Title">Launcher update - missing runtime</sys:String>

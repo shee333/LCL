@@ -12,21 +12,24 @@ public static class UpdateManager
 {
     public static bool isUpdateWaitingRestart;
 
-    public static UpdatesWrapperModel remoteServer = new(
-        new List<IUpdateSource>
-        {
-            new UpdatesMirrorChyanModel(),
-            new UpdatesRandomModel(
-            [
-                new UpdatesMinioModel("https://s3.pysio.online/pcl2-ce/", "Pysio"),
-                new UpdatesMinioModel(
-                    "https://staticassets.naids.com/resources/pclce/",
-                    "Naids")
-            ]),
-            new UpdatesMinioModel(
-                "https://github.com/PCL-Community/PCL2_CE_Server/raw/main/",
-                "GitHub")
-        });
+    /// <summary>是否启用在线更新。关闭时使用占位更新源，不会访问任何上游服务器。</summary>
+    public static bool AutoUpdateEnabled => Brand.AutoUpdateEnabled;
+
+    public static UpdatesWrapperModel remoteServer = new(BuildUpdateSources());
+
+    /// <summary>按品牌配置构造更新源列表。</summary>
+    private static List<IUpdateSource> BuildUpdateSources()
+    {
+        if (!Brand.AutoUpdateEnabled)
+            // 品牌化：接入本社区自有更新源之前，不保留任何上游源，
+            // 以免更新流程把本社区的发行版覆盖成上游版本。
+            return [new UpdatesDisabledSource()];
+
+        // TODO(品牌化)：接入自有更新源后在此返回，例如：
+        //   return [new UpdatesMinioModel("https://<你们的地址>/", "LCL")];
+        // 未填写时仍使用占位源，保持“永不更新为上游版本”这一安全默认。
+        return [new UpdatesDisabledSource()];
+    }
 
     public static Loading.LoaderCombo<JsonObject> updateLoader;
 

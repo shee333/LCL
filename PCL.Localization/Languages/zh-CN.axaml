@@ -3272,6 +3272,7 @@
     <sys:String x:Key="Setup.Update.CheckAgain">再次检查</sys:String>
     <sys:String x:Key="Setup.Update.CheckFailed">检查更新时出错</sys:String>
     <sys:String x:Key="Setup.Update.Checking">正在检查更新...</sys:String>
+    <sys:String x:Key="Setup.Update.Disabled">本版本不提供在线更新，请从发布页获取新版本。</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.DownloadRuntime">下载 .NET {0} 运行时</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Message">发现了启动器更新（版本 {1}），但是新版本要求你的电脑安装 .NET {0} 才可以运行。&#xA;你需要先安装 .NET {0} 才可以继续更新。&#xA;&#xA;点击下方按钮打开网页，然后选择 ⌈.NET 桌面运行时⌋ 中的 {2} 选项下载。</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Title">启动器更新 - 缺少运行环境</sys:String>

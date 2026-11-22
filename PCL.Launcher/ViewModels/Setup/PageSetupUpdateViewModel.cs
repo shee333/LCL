@@ -109,10 +109,26 @@ public partial class PageSetupUpdateViewModel : ViewModelBase
         UpdateModeIndex = Math.Clamp((int)Config.Update.UpdateMode, 0, 3);
         SetUpdateButtonState(InstallButtonState);
         UpdateButtonEnabled = !IsFlatpak;
+
+        if (!UpdateManager.AutoUpdateEnabled)
+        {
+            // 品牌化：尚未接入自有更新源，明确告知用户不提供在线更新，
+            // 避免显示“已是最新版本”造成误解。
+            SetStatusText("Setup.Update.Disabled");
+            CheckAgainEnabled = false;
+            UpdateButtonEnabled = false;
+        }
     }
 
     public async Task CheckUpdateAsync()
     {
+        if (!UpdateManager.AutoUpdateEnabled)
+        {
+            SetStatusText("Setup.Update.Disabled");
+            CheckAgainEnabled = false;
+            return;
+        }
+
         if (_checking) return;
         _checking = true;
         ShowUpdateCard = false;
