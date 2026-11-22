@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-        <AssemblyTitle>栎木栎林启动器</AssemblyTitle>
+        <AssemblyTitle>栎木栎林社区启动器</AssemblyTitle>
         <AssemblyName>PCL.Launcher</AssemblyName>
         <Description>栎木栎林（Limlin）社区启动器的界面层</Description>
         <Company>Limlin Community</Company>
