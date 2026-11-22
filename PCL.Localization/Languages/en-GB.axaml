@@ -1486,10 +1486,10 @@
     <sys:String x:Key="Launch.Error.ExportScriptTitle">Failed to export launch script</sys:String>
     <sys:String x:Key="Launch.Error.OperationFailed">A launch page operation failed. See the details below.</sys:String>
     <sys:String x:Key="Launch.Error.Title">Launch failed</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">To permanently hide this notice, enter the correct PCL CE development organisation name.</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">Enter the PCL CE development organisation name</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.Message">You are using PCL CE (Plain Craft Launcher Community Edition)! This version is independently developed and maintained, and differs from the original version in its development path and user experience.&#xA;&#xA;If you downloaded the PCL CE by accident, we strongly recommend downloading the original PCL version for long-term use, as this distribution may not be user-friendly for newcomers.&#xA;Additionally, please submit PCL CE issues to the PCL CE repository, and do not report PCL CE issues to the original repository!</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.Title">PCL CE notice</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">To permanently hide this notice, enter the community name (hint: Limlin).</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">Enter the Limlin community name</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.Message">Welcome to Limlin, an open and idealistic non-profit gaming community founded on 13 January 2017. We believe in being "fun and warm", and hope you will find common ground and resonance here.&#xA;&#xA;This launcher is built on the open-source PCL codebase. If you run into any issue, please report it to the Limlin community rather than the upstream repository.</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.Title">Limlin notice</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.WrongInput">Not quite right...</sys:String>
     <sys:String x:Key="Launch.Right.Log.Title">Launch log</sys:String>
 
@@ -2483,8 +2483,8 @@
 
     <!-- Setup.About -->
 
-    <sys:String x:Key="Setup.About.Community.Info">The development team of Plain Craft Launcher Community Edition!</sys:String>
-    <sys:String x:Key="Setup.About.Community.Name">PCL Community</sys:String>
+    <sys:String x:Key="Setup.About.Community.Info">The development team of the Limlin community!</sys:String>
+    <sys:String x:Key="Setup.About.Community.Name">Limlin Community</sys:String>
     <sys:String x:Key="Setup.About.Contributors.Title">Contributors</sys:String>
     <sys:String x:Key="Setup.About.Contributors.ViewMore">View more</sys:String>
     <sys:String x:Key="Setup.About.Error.LoadContributorsFailed">Failed to load contributor information</sys:String>

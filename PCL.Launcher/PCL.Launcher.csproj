@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-        <AssemblyTitle>PCL CE</AssemblyTitle>
+        <AssemblyTitle>栎木栎林启动器</AssemblyTitle>
         <AssemblyName>PCL.Launcher</AssemblyName>
-        <Description>PCL CE 的界面层</Description>
-        <Company>PCL Community</Company>
-        <Product>PCL CE</Product>
+        <Description>栎木栎林（Limlin）社区启动器的界面层</Description>
+        <Company>Limlin Community</Company>
+        <Product>Limlin Launcher</Product>
         <RootNamespace>PCL</RootNamespace>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net10.0</TargetFramework>

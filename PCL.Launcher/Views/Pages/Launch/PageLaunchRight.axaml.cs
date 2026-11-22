@@ -248,7 +248,7 @@ public partial class PageLaunchRight : MyPageRight, IRefreshable
                 return;
 
             input = new string(input.Where(char.IsAsciiLetter).ToArray()).ToLowerInvariant();
-            if (!input.Contains("pclcommunity"))
+            if (!input.Contains("limlin"))
             {
                 HintService.Show(Hints.Info(Lang.Text("Launch.Right.CommunityHint.WrongInput")));
                 return;

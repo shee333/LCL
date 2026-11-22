@@ -1486,10 +1486,10 @@
     <sys:String x:Key="Launch.Error.ExportScriptTitle">匯出啟動指令碼失敗</sys:String>
     <sys:String x:Key="Launch.Error.OperationFailed">啟動頁操作失敗。請檢視錯誤詳情。</sys:String>
     <sys:String x:Key="Launch.Error.Title">啟動失敗</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">若要永久隱藏此提示，請輸入正確的 PCL CE 開發組織名稱。</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">輸入 PCL CE 開發組織名稱</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.Message">你正在使用 PCL CE（Plain Craft Launcher Community Edition）！此版本為獨立開發和維護，與原版維護路線不同，體驗有所出入。&#xA;&#xA;如果你是意外下載到了 PCL CE ，我們十分建議您下載原版 PCL 長期使用，此發行版本對新手使用者體驗可能不友好。&#xA;此外， PCL CE 的問題請向 PCL CE 的儲存庫提交 Issue，不要向官方儲存庫回饋 PCL CE 的問題哦！</sys:String>
-    <sys:String x:Key="Launch.Right.CommunityHint.Title">PCL CE 提示</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.HidePrompt">若要永久隱藏此提示，請輸入社群名（提示：Limlin）。</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.InputTitle">輸入栎木栎林社群名</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.Message">「栎木栎林」Limlin 社群歡迎你！&#xA;&#xA;這是一個開放式、理想化的公益遊戲社群，成立於 2017 年 1 月 13 日。我們提倡「有趣，有溫度」，希望在這裡一起尋找共性、產生共鳴。&#xA;&#xA;啟動器基於 PCL 開源程式碼二次開發。若遇到問題，請向栎木栎林社群回饋，不要提交到上游儲存庫哦！</sys:String>
+    <sys:String x:Key="Launch.Right.CommunityHint.Title">栎木栎林提示</sys:String>
     <sys:String x:Key="Launch.Right.CommunityHint.WrongInput">不太對哦……</sys:String>
     <sys:String x:Key="Launch.Right.Log.Title">啟動日誌</sys:String>
 
@@ -2483,8 +2483,8 @@
 
     <!-- Setup.About -->
 
-    <sys:String x:Key="Setup.About.Community.Info">Plain Craft Launcher Community Edition 的開發團隊！</sys:String>
-    <sys:String x:Key="Setup.About.Community.Name">PCL Community</sys:String>
+    <sys:String x:Key="Setup.About.Community.Info">栎木栎林（Limlin）社群的開發團隊！</sys:String>
+    <sys:String x:Key="Setup.About.Community.Name">栎木栎林 · Limlin</sys:String>
     <sys:String x:Key="Setup.About.Contributors.Title">貢獻者們</sys:String>
     <sys:String x:Key="Setup.About.Contributors.ViewMore">檢視更多</sys:String>
     <sys:String x:Key="Setup.About.Error.LoadContributorsFailed">載入貢獻者資訊失敗</sys:String>
