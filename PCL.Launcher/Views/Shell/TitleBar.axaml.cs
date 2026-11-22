@@ -97,7 +97,8 @@ public partial class TitleBar : UserControl
         BtnTitleHelp.IsVisible = type == 4;
         LabTitleLogo.IsVisible = type == 2;
         ImageTitleLogo.IsVisible = type == 3;
-        if (type != 4) CELogo.IsVisible = type != 0;
+        // 品牌化：不再显示上游的 "CE" 徽标。
+        CELogo.IsVisible = false;
 
         if (type == 2) LabTitleLogo.Text = Config.Preference.WindowTitleCustomText;
         if (type == 3)
