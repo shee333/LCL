@@ -24,13 +24,13 @@ public partial class PageSetupAbout : MyPageRight
         ItemAboutPcl.Title = Basics.Metadata.Name;
 
         BtnSponsorOriginalAuthor.Click += (_, _) => Basics.OpenPath("https://ifdian.net/a/LTCat");
-        BtnGitHubHome.Click += (_, _) => Basics.OpenPath("https://github.com/PCL-Community");
+        BtnGitHubHome.Click += (_, _) => Basics.OpenPath("https://github.com/shee333/LCL");
         BtnSourceCode.Click +=
-            (_, _) => Basics.OpenPath("https://github.com/PCL-Community/PCL2-CE");
+            (_, _) => Basics.OpenPath("https://github.com/shee333/LCL");
         BtnContributors.Click += (_, _) =>
-            Basics.OpenPath("https://github.com/PCL-Community/PCL2-CE/graphs/contributors");
+            Basics.OpenPath("https://github.com/shee333/LCL/graphs/contributors");
         BtnCommunitySource.Click +=
-            (_, _) => Basics.OpenPath("https://github.com/PCL-Community/PCL2-CE");
+            (_, _) => Basics.OpenPath("https://github.com/shee333/LCL");
         BtnCommunityLobbyPrivacy.Click += (_, _) =>
             Basics.OpenPath("https://www.pclc.cc/privacy/personal-info-brief.html");
         BtnNatayarkTerms.Click += (_, _) => Basics.OpenPath("https://account.naids.com/policy");
