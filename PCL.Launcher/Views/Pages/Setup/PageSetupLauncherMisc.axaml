@@ -70,13 +70,6 @@
                                      Margin="0,0,20,0"
                                      Padding="13,0"
                                      Text="{loc:Loc Setup.Misc.System.ImportSettings}" />
-                        <ui:MyButton x:Name="BtnSystemStopUsingPclCe"
-                                     Grid.Column="2"
-                                     MinWidth="140"
-                                     Margin="0,0,20,0"
-                                     Padding="13,0"
-                                     ColorType="Red"
-                                     Text="{loc:Loc Setup.Misc.System.StopUsingPclCe}" />
                     </Grid>
                 </Grid>
             </ui:MyCard>

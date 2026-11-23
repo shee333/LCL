@@ -101,7 +101,6 @@ public partial class PageSetupLauncherMisc : MyPageRight, ISetupResetPage
         BtnApplyHttpProxy.Click += (_, _) => ViewModel.ApplyHttpProxy();
         BtnSystemSettingExp.Click += (_, _) => ExportSettings();
         BtnSystemSettingImp.Click += async (_, _) => await ImportSettingsAsync();
-        BtnSystemStopUsingPclCe.Click += async (_, _) => await StopUsingPclCeAsync();
 
         Loaded += (_, _) =>
         {
@@ -320,96 +319,4 @@ public partial class PageSetupLauncherMisc : MyPageRight, ISetupResetPage
         return Lang.Number(Math.Round(tick / 10d + 0.1d, 1), "N1") + "x";
     }
 
-    #region 停止使用 PCL CE
-
-    private static async Task StopUsingPclCeAsync()
-    {
-        try
-        {
-            var first = await DialogService.Instance.ShowAsync(
-                new TextDialogRequest
-                {
-                    Title = Lang.Text("Setup.Misc.System.StopUsingPclCe.Title"),
-                    Content = Lang.Text("Setup.Misc.System.StopUsingPclCe.Message"),
-                    Buttons = DialogButtons.Create(
-                        "Common.Action.Continue",
-                        "Setup.Misc.System.StopUsingPclCe.ContinueAndRemove",
-                        "Common.Action.Cancel"),
-                    IsWarn = true
-                });
-            if (first.Button is < 1 or > 2) return;
-
-            var second = await DialogService.Instance.ShowAsync(
-                new TextDialogRequest
-                {
-                    Title = Lang.Text("Common.Dialog.Warning"),
-                    Content = Lang.Text("Setup.Misc.System.StopUsingPclCe.Message.Final"),
-                    Buttons = DialogButtons.ContinueCancel,
-                    IsWarn = true
-                });
-            if (!second.IsConfirmed) return;
-
-            StopUsingPclCeCore(first.Button == 2);
-        }
-        catch (Exception ex)
-        {
-            LauncherCommon.Log(
-                ex,
-                "停止使用 PCL CE 失败",
-                LauncherLogLevel.Msgbox,
-                userSummary: Lang.Text("Setup.Error.OperationFailed"));
-        }
-    }
-
-    private static void StopUsingPclCeCore(bool removeMcResources)
-    {
-        if (removeMcResources && !string.IsNullOrWhiteSpace(States.Game.Folders))
-            foreach (var folder in States.Game.Folders.Split('|'))
-            {
-                var parts = folder.Split('>');
-                if (parts.Length < 2) continue;
-                var realPath = parts[1];
-                DeleteFiles([Path.Combine(realPath, "PCL.ini")]);
-
-                var versionsPath = Path.Combine(realPath, "versions");
-                if (!Directory.Exists(versionsPath)) continue;
-                DeleteFiles(
-                    Directory
-                        .EnumerateDirectories(versionsPath)
-                        .Select(p => Path.Combine(p, "PCL", "config.v1.yml")));
-            }
-
-        var folders = new[]
-            {
-                Paths.Data,
-                Paths.OldSharedData,
-                Paths.SharedData,
-                Paths.SharedLocalData,
-                Paths.Temp
-            }
-            .Where(folder => !string.IsNullOrWhiteSpace(folder))
-            .Distinct()
-            .ToArray();
-
-        ApplicationRuntime.Current.Platform.ProcessCleanup.DeleteFoldersAndRestart(folders);
-
-        UiInteraction.Shutdown();
-        return;
-
-        static void DeleteFiles(IEnumerable<string> paths)
-        {
-            foreach (var path in paths)
-                try
-                {
-                    if (File.Exists(path))
-                        File.Delete(path);
-                }
-                catch (Exception)
-                {
-                    // ignored
-                }
-        }
-    }
-
-    #endregion
 }

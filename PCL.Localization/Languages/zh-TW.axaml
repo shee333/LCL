@@ -2536,8 +2536,8 @@
     <!-- Setup.About.Legal -->
 
     <sys:String x:Key="Setup.About.Legal.CommunityLobbyPrivacy">PCL CE 連線大廳隱私政策</sys:String>
-    <sys:String x:Key="Setup.About.Legal.CommunitySource">PCL CE 開放原始碼</sys:String>
-    <sys:String x:Key="Setup.About.Legal.CopyrightText">Copyright © 2026 PCL Community &amp; 龙腾猫跃.&#xD;非 MINECRAFT 官方產品。未經 MOJANG 或 MICROSOFT 批准，也不與 MOJANG 或 MICROSOFT 關聯。</sys:String>
+    <sys:String x:Key="Setup.About.Legal.CommunitySource">開放原始碼</sys:String>
+    <sys:String x:Key="Setup.About.Legal.CopyrightText">Copyright © 2026 Limlin Community &amp; 龙腾猫跃.&#xD;非 MINECRAFT 官方產品。未經 MOJANG 或 MICROSOFT 批准，也不與 MOJANG 或 MICROSOFT 關聯。</sys:String>
     <sys:String x:Key="Setup.About.Legal.NatayarkTerms">Natayark OpenID 服務條款</sys:String>
     <sys:String x:Key="Setup.About.Legal.OtherInfo">其他資訊</sys:String>
     <sys:String x:Key="Setup.About.Legal.PrivacyNotice">隱私說明</sys:String>
@@ -2984,11 +2984,6 @@
     <sys:String x:Key="Setup.Misc.System.MaxLogLines">即時日誌行數</sys:String>
     <sys:String x:Key="Setup.Misc.System.MaxLogLines.ToolTip">即時日誌功能中最大顯示行數，超過該值會自動刪除舊的日誌。</sys:String>
     <sys:String x:Key="Setup.Misc.System.MaxLogLines.Unlimited">無限制</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe">停止使用 PCL CE</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.ContinueAndRemove">繼續並清理實例資料夾</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.Message.Final">你確認要繼續操作嗎？這是最後警告！&#xA;與 PCL CE 有關的一切資料將被永久消除！（真的很久！）</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.Message">即將刪除此電腦上與 PCL CE 有關的全部設定、快取、已儲存的帳戶資訊及其他相關資料，並復原已接受的許可協議。完成後，軟體將自動關閉。&#xA;&#xA;但請注意，以下內容無法自動刪除或登出：&#xA;- 此電腦上其他 PCL CE 實例的本機資料&#xA;- Natayark 帳戶&#xA;&#xA;如需同時刪除 Minecraft 實例中的 PCL CE 設定檔，請選擇「繼續並清理實例資料夾」，這不會影響你的遊戲設定、模組、存檔，以及其他資料。&#xA;&#xA;此操作無法復原。您確認要繼續嗎？</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.Title">停止使用 PCL CE？</sys:String>
     <sys:String x:Key="Setup.Misc.System.Telemetry">啟用遙測資料收集</sys:String>
     <sys:String x:Key="Setup.Misc.System.Telemetry.ToolTip">啟用此功能後，啟動器將會收集並上報錯誤與裝置環境資訊，這可以幫助開發者修復潛在的問題、更好的進行規劃和開發。&#xA;若啟用此功能，我們將會收集以下資訊：啟動器內出現的錯誤，啟動器版本資訊與識別碼，使用的 Windows 系統版本與架構，已安裝的實體記憶體大小，NAT 與 IPv6 支援情況，是否使用過原版 PCL、HMCL 或 BakaXL。&#xA;&#xA;這些資料均不與你關聯，我們也絕不會向第三方出售資料。不啟用此功能不會影響你使用其他功能，但可能會影響開發者修復潛在 Bug。&#xA;&#xA;此項更改將在重新啟動啟動器後生效。</sys:String>
     <sys:String x:Key="Setup.Misc.System.Title">系統</sys:String>
@@ -3204,6 +3199,7 @@
     <sys:String x:Key="Setup.Update.CheckFailed">檢查更新時出錯</sys:String>
     <sys:String x:Key="Setup.Update.Checking">正在檢查更新...</sys:String>
     <sys:String x:Key="Setup.Update.Disabled">本版本不提供線上更新，請從發布頁取得新版本。</sys:String>
+    <sys:String x:Key="Brand.LauncherName">栎木栎林社群啟動器</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.DownloadRuntime">下載 .NET {0} 執行時</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Message">發現了啟動器更新（版本 {1}），但是新版本要求你的電腦安裝 .NET {0} 才可以執行。&#xA;你需要先安裝 .NET {0} 才可以繼續更新。&#xA;&#xA;點擊下方按鈕開啟網頁，然後選擇「.NET 桌面執行時」中的 {2} 選項下載。</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Title">啟動器更新 - 缺少執行環境</sys:String>
@@ -3543,17 +3539,17 @@
     <sys:String x:Key="Update.Action">更新</sys:String>
     <sys:String x:Key="Update.Available">啟動器有新版本可用（{0} -&gt; {1}）&#xA;是否立即更新？</sys:String>
     <sys:String x:Key="Update.Check.Failed">無法取得最新版本資訊，請檢查網路連線</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Body">你正在使用來自 PCL-Community 的 PCL CE，遇到問題請不要向原版儲存庫回饋！&#xA;PCL-Community 及其成員與龍騰貓躍無從屬關係，且均不會為您的使用做擔保。&#xA;&#xA;如果你是意外下載的 PCL CE，建議下載原版 PCL 使用。&#xA;如果你是意外下載的 PCL CE，建議下載原版 PCL 使用。&#xA;如果你是意外下載的 PCL CE，建議下載原版 PCL 使用。&#xA;&#xA;該版本與原版的特性區別：&#xA;- 主題切換：僅部分固定藍色系主題，沒有計劃新增其他主題。&#xA;- 百寶箱：缺失部分原版中的內容（回聲洞、千萬別點）。&#xA;&#xA;此提示會在啟動器更新後展示一次。</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Body">歡迎使用「栎木栎林」Limlin 社群啟動器！&#xA;&#xA;這是一個開放式、理想化的公益遊戲社群，成立於 2017 年 1 月 13 日。若遇到問題，請向栎木栎林社群回饋。</sys:String>
     <sys:String x:Key="Update.CommunityNotice.Confirm">我知道了</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Title">PCL CE 版本說明</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Title">栎木栎林提示</sys:String>
     <sys:String x:Key="Update.Error.FetchFailed">取得啟動器更新失敗，請檢查網路連線</sys:String>
     <sys:String x:Key="Update.Error.FileNotFound">找不到更新檔案</sys:String>
     <sys:String x:Key="Update.Error.OperationFailed">更新操作失敗。請檢視錯誤詳情。</sys:String>
     <sys:String x:Key="Update.Error.Sha256Mismatch">更新檔案 SHA256 不正確，應該為 {0}，實際為 {1}</sys:String>
     <sys:String x:Key="Update.Error.UnableToGetUpdate">無法取得更新</sys:String>
     <sys:String x:Key="Update.Error.UpdateBlocked">更新失敗</sys:String>
-    <sys:String x:Key="Update.Error.UpdateBlockedMessage">由於被 Windows 安全中心攔截，或存在權限問題，導致 PCL CE 無法更新。&#xA;請將 PCL CE 所在資料夾加入白名單，或手動用 {0}PCL\Plain Craft Launcher Community Edition.exe 取代目前檔案！</sys:String>
-    <sys:String x:Key="Update.Service.PclCe">PCL CE 服務</sys:String>
+    <sys:String x:Key="Update.Error.UpdateBlockedMessage">由於被 Windows 安全中心攔截，或存在權限問題，導致啟動器無法更新。&#xA;請將啟動器所在資料夾加入白名單，或手動用新版本檔案取代目前檔案！</sys:String>
+    <sys:String x:Key="Update.Service.PclCe">更新服務</sys:String>
     <sys:String x:Key="Update.Title">啟動器更新</sys:String>
     <sys:String x:Key="Update.ManualDownloadRequired">目前平台暫不支援應用程式內安裝更新，請前往發佈頁手動下載。</sys:String>
 

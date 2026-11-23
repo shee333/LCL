@@ -21,7 +21,7 @@ public partial class PageSetupAbout : MyPageRight
         PanScroll = PanBack;
         DataContext = ViewModel;
 
-        ItemAboutPcl.Title = Basics.Metadata.Name;
+        ItemAboutPcl.Title = Lang.Text("Brand.LauncherName");
 
         BtnSponsorOriginalAuthor.Click += (_, _) => Basics.OpenPath("https://ifdian.net/a/LTCat");
         BtnGitHubHome.Click += (_, _) => Basics.OpenPath("https://github.com/shee333/LCL");

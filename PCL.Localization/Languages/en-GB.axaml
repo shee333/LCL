@@ -2536,8 +2536,8 @@
     <!-- Setup.About.Legal -->
 
     <sys:String x:Key="Setup.About.Legal.CommunityLobbyPrivacy">Community lobby privacy policy</sys:String>
-    <sys:String x:Key="Setup.About.Legal.CommunitySource">PCL CE source code</sys:String>
-    <sys:String x:Key="Setup.About.Legal.CopyrightText">Copyright © PCL Community &amp; LTCat (龙腾猫跃) 2026.&#xD;NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</sys:String>
+    <sys:String x:Key="Setup.About.Legal.CommunitySource">Source code</sys:String>
+    <sys:String x:Key="Setup.About.Legal.CopyrightText">Copyright © Limlin Community &amp; LTCat (龙腾猫跃) 2026.&#xD;NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</sys:String>
     <sys:String x:Key="Setup.About.Legal.NatayarkTerms">Natayark OpenID ToS</sys:String>
     <sys:String x:Key="Setup.About.Legal.OtherInfo">Other information</sys:String>
     <sys:String x:Key="Setup.About.Legal.PrivacyNotice">Privacy statement</sys:String>
@@ -2984,11 +2984,6 @@
     <sys:String x:Key="Setup.Misc.System.MaxLogLines">Real-time log lines</sys:String>
     <sys:String x:Key="Setup.Misc.System.MaxLogLines.ToolTip">Maximum number of lines displayed in the real-time log feature. Old logs are automatically deleted when exceeded.</sys:String>
     <sys:String x:Key="Setup.Misc.System.MaxLogLines.Unlimited">Unlimited</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe">Stop using PCL CE</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.ContinueAndRemove">Continue and remove instance configs</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.Message">This will delete all PCL CE settings, cached data, saved account information, and other related data from this computer. Your acceptance of any licence agreements will also be revoked. PCL CE will close automatically when the process is complete.&#xA;&#xA;The following cannot be removed automatically:&#xA;- Local data from other PCL CE installations on this computer&#xA;- Your Natayark account&#xA;&#xA;To also remove PCL CE configuration files from Minecraft instances, choose 'Continue and remove instance configs'. This will not affect Minecraft settings, mods, saves, or other game data.&#xA;&#xA;This action cannot be undone. Are you sure you want to continue?</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.Message.Final">This is the final warning! Are you sure you want to continue?&#xA;All PCL CE data on this computer will be lost forever! (A long time!)</sys:String>
-    <sys:String x:Key="Setup.Misc.System.StopUsingPclCe.Title">Stop using PCL CE?</sys:String>
     <sys:String x:Key="Setup.Misc.System.Telemetry">Enable telemetry data collection</sys:String>
     <sys:String x:Key="Setup.Misc.System.Telemetry.ToolTip">When enabled, the launcher will collect and report errors and device environment information. This helps developers fix potential issues and better plan and develop the launcher.&#xA;The following information will be collected: launcher errors, launcher version information and identifier, Windows system version and architecture, installed physical memory size, NAT and IPv6 support status, and whether original PCL, HMCL, or BakaXL have been used.&#xA;&#xA;This data is not associated with you, and we will never sell it to any third party. Not enabling this will not affect other features, but may affect developers' ability to fix potential bugs.&#xA;&#xA;This change will take effect after restarting the launcher.</sys:String>
     <sys:String x:Key="Setup.Misc.System.Title">System</sys:String>
@@ -3204,6 +3199,7 @@
     <sys:String x:Key="Setup.Update.CheckFailed">Failed to check for updates</sys:String>
     <sys:String x:Key="Setup.Update.Checking">Checking for updates...</sys:String>
     <sys:String x:Key="Setup.Update.Disabled">Online updates are not available for this build. Please get the latest version from the release page.</sys:String>
+    <sys:String x:Key="Brand.LauncherName">Limlin Launcher</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.DownloadRuntime">Download .NET {0} Runtime</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Message">A launcher update (version {1}) was found, but the new version requires .NET {0} to be installed on your computer.&#xA;You need to install .NET {0} before continuing the update.&#xA;&#xA;Click the button below to open the webpage, then select {2} under '.NET Desktop Runtime' to download.</sys:String>
     <sys:String x:Key="Setup.Update.DotNetMissing.Title">Launcher update - missing runtime</sys:String>
@@ -3543,17 +3539,17 @@
     <sys:String x:Key="Update.Action">Update</sys:String>
     <sys:String x:Key="Update.Available">A new launcher version is available ({0} -&gt; {1})&#xA;Update now?</sys:String>
     <sys:String x:Key="Update.Check.Failed">Unable to get latest version information. Please check your network connection.</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Body">You are using PCL CE from PCL-Community. Please DO NOT report issues to the original repository!&#xA;PCL-Community and its members are not affiliated with LTCat (龙腾猫跃), and do not guarantee your usage.&#xA;&#xA;If you downloaded PCL CE by mistake, we recommend using the original PCL instead.&#xA;If you downloaded PCL CE by mistake, we recommend using the original PCL instead.&#xA;If you downloaded PCL CE by mistake, we recommend using the original PCL instead.&#xA;&#xA;Differences from the original version:&#xA;- Themes: only some fixed blue themes; no plans to add new themes.&#xA;- Toolbox: some content from the original version is missing (Echo Cave, Don't Click).&#xA;&#xA;This message will be shown once after a launcher update.</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Body">Welcome to Limlin, an open and idealistic non-profit gaming community founded on 13 January 2017. If you run into any issue, please report it to the Limlin community.</sys:String>
     <sys:String x:Key="Update.CommunityNotice.Confirm">I understand</sys:String>
-    <sys:String x:Key="Update.CommunityNotice.Title">PCL CE notice</sys:String>
+    <sys:String x:Key="Update.CommunityNotice.Title">Limlin notice</sys:String>
     <sys:String x:Key="Update.Error.FetchFailed">Failed to get launcher update. Please check your network connection.</sys:String>
     <sys:String x:Key="Update.Error.FileNotFound">Update file not found</sys:String>
     <sys:String x:Key="Update.Error.OperationFailed">An update operation failed. See the details below.</sys:String>
     <sys:String x:Key="Update.Error.Sha256Mismatch">Update file SHA256 mismatch. Expected: {0}, actual: {1}</sys:String>
     <sys:String x:Key="Update.Error.UnableToGetUpdate">Unable to get update information</sys:String>
     <sys:String x:Key="Update.Error.UpdateBlocked">Update failed</sys:String>
-    <sys:String x:Key="Update.Error.UpdateBlockedMessage">PCL CE cannot update because it was blocked by Windows Security or does not have sufficient permissions.&#xA;Please add the PCL CE folder to the exclusion list, or manually replace the current file with {0}PCL\Plain Craft Launcher Community Edition.exe!</sys:String>
-    <sys:String x:Key="Update.Service.PclCe">PCL CE service</sys:String>
+    <sys:String x:Key="Update.Error.UpdateBlockedMessage">The launcher cannot update because it was blocked by Windows Security or does not have sufficient permissions.&#xA;Please add the launcher folder to the allowlist, or manually replace the current file with the new version.</sys:String>
+    <sys:String x:Key="Update.Service.PclCe">Update service</sys:String>
     <sys:String x:Key="Update.Title">Launcher update</sys:String>
     <sys:String x:Key="Update.ManualDownloadRequired">In-app update installation is not available on this platform. Please download it manually from the release page.</sys:String>
 
